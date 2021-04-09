@@ -1,0 +1,122 @@
+/* 모바일용 CSS - 320px */
+/* 공통 */
+.inner{
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.hide {
+  font-size: 0;
+}
+.tit{
+  font-size: 24px;
+  color: #000;
+  font-weight: bolder;
+}
+
+/* HEADER */
+header { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner {
+  height: 85px;
+  height: 5.131rem;
+}
+header .inner img{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .inner .main-menu,
+header .inner .sub-manu{
+  display: none;
+}
+header .inner .manu-btn{
+  position: absolute;
+  right: 8%;
+  top: 50%;
+}
+header .inner .manu-btn img{
+  height: 25px;
+  width: 35px;
+}
+/* PC용 CSS - 1024px*/
+@media all and (min-width:1024px){
+
+  /* 공통 */
+
+  /* HEADER */
+  header .inner img{
+    left: 10%;
+  }
+  header .inner .main-menu {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  header .inner .main-menu li a{
+    width: 100px;
+    display: block;
+    text-align: center;
+  
+  }
+  header .inner .main-menu li a span {
+    position: relative;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  header .inner .main-menu li a span:nth-child(1) {
+   
+  }
+  header .inner .main-menu li a span:nth-child(2) {
+    font-size: 0;
+  }
+  header .inner .main-menu li a:hover span:nth-child(1) {
+    font-size: 0;
+  }
+  header .inner .main-menu li a:hover span:nth-child(2) {
+    font-size: 19px;
+  }
+
+  header .inner .sub-manu {
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  header .inner .sub-manu li {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+  header .inner .sub-manu li::after{
+    content: "";
+    background-color: #ddd;
+    width: 1px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+  }
+  header .inner .sub-manu li:last-child::after{
+    display: none;
+  }
+  header .inner .manu-btn{
+    display: none;
+  }
+
+}

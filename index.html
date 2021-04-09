@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H-ear</title>
+
+  <!-- favicon -->
+<link rel="icon" href="./favicon.png">
+
+  <!-- reset -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- viewport 추가 작성 하기.. 나중에ㅎㅎ-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- css,js -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+  <div class="inner">
+    <h1 class="hide">H-ear nev</h1>
+    <img src="./images/logo.png" alt="H-ear 로고" />
+    <ul class="main-menu">
+      <li>
+        <a href="javascript:void(0)">
+          <span>Into</span>
+          <span>소개</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Labs</span>
+          <span>연구실</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Contents</span>
+          <span>자료실</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Event</span>
+          <span>이벤트</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <span>Notice</span>
+          <span>공지사항</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="sub-manu">
+      <li>로그인</li>
+      <li>마이페이지</li>
+      <li>알림함</li>
+    </ul>
+
+    <div class="manu-btn"><img src="./images/mMenuBtn.png" alt="manu open butten"></div>
+  </div>
+</header>
+
+
+
+<!-- VISUAL -->
+<section class="visual">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/main1.jpg" alt="투싼 하이브리드와 캠핑 가게된 사연!">
+        </a></div>
+      <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/main2.png" alt="봄이니까 디지털키로 시승해 '봄' ">
+        </a></div>
+      <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/main3.jpg" alt="현대차 첫 전용전기자!">
+        </a></div>
+      <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/main4.jpg" alt="H-ear패널과 함께하는 전문가 칼럼!">
+        </a></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-prev">
+      <img src="./images/mainV_prev.png" alt="main prev">
+    </div>
+    <div class="swiper-next">
+      <img src="./images/mainV_next.png" alt="main next">
+    </div>
+
+
+
+    <div class="login">
+      <div class="login-input">
+        <div class="id">
+          <img src="./images/login_icon_b1.png" alt="">
+          <input type="text" placeholder="아이디(이메일)을 입력해주세요">
+        </div>
+        <div class="fw">
+          <img src="./images/login_icon_b2.png" alt="">
+
+          <input type="text" placeholder="비밀번호를 입력해주세요">
+        </div>
+      </div>
+
+      <div class="save-id"><input type="checkbox">아이디 저장</div>
+      <div class="login-btn">
+        <div class="login-btn-login">
+          <a href="javascript:void(0)">로그인</a>
+        </div>
+        <div class="login-signup">
+          <a href="javascript:void(0)">회원가입</a>
+        </div>
+      </div>
+
+      <div class="find">
+        <a href="javascript:void(0)">아이디(이메일) 찾기</a>
+        <a href="javascript:void(0)">비밀번호 찾기</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- main -->
+<section class="main">
+  <div class="tabmenu inner">
+    <div class="more-btn"><a href="javascript:void(0)">MORE</a></div>
+    <ul>
+      <li id="tab1" class="btnCon"> <input type="radio" checked name="tabmenu" id="tabmenu1">
+        <label for="tabmenu1">전체Lab</label>
+        <div class="tabCon tabCon-1">
+
+
+
+          <div class="swiper-container"> 
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.1.png" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.2.png" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.3.png" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.4.png" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.5.png" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.6.jpg" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.7.png" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="swiper-slide"> 
+                <a href="javascript:void(0)"><img src="./images/2020.8.jpg" alt="img1" /></a>
+                <div class="txtarea">
+                  <a href="javascript:void(0)">
+                    <div class="label"><p>기타</p></div>
+                    <p class="tit">응답하라 아카이브</p>
+                    <p class="txt">기존의 패널에게 묻습니다를 정리한 H-ear의 역사입니다.</p>
+                  </a>
+                  <ul class="list">
+                    <li>
+                      <span>검토대기</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토중</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                    <li>
+                      <span>검토완료</span>
+                      <span class="list-right"><span class="num">0</span>건</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+ 
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+
+        </div>
+
+      </li>
+      <li id="tab2" class="btnCon"><input type="radio" name="tabmenu" id="tabmenu2">
+        <label for="tabmenu2">My Lab</label>
+        <div class="tabCon">내용2</div>
+
+      </li>
+      <li id="tab3" class="btnCon"><input type="radio" name="tabmenu" id="tabmenu3">
+        <label for="tabmenu3">즐겨찾기</label>
+        <div class="tabCon">내용3</div>
+
+      </li>
+    </ul>
+</section>
+
+<!-- MAINCON2 -->
+
+<section class="maincon2">
+  <div class="inner">
+  <div class="maincon2-inner">
+  <div class="hot-subject">
+    <p class="tit">HOT 주제</p>
+    <ul>
+      <li><a href="javascript:void(0)">
+        <p>패널님께서 생각하시는 가장 큰 거짓말</p><P>2021-04-01 - 20201-04-07</P>
+      </a></li>
+      <li><a href="javascript:void(0)">
+        <p>스타리아에 대해 기대하시는 부분은 무엇인가요
+        </p><P>2021-04-01 - 20201-04-07</P>
+      </a></li>
+      <li><a href="javascript:void(0)">
+        <p>패널님께서 생각하시는 가장 큰 거짓말</p><P>2021-04-01 - 20201-04-07</P>
+      </a></li>
+      <li><a href="javascript:void(0)">
+        <p>패널님께서 생각하시는 가장 큰 거짓말</p><P>2021-04-01 - 20201-04-07</P>
+      </a></li>
+    </ul>
+  </div>
+  <div class="hot-survey">
+    <p class="tit">HOT 설문</p>
+    <ul>
+      <li><a href="javascript:void(0)">
+        <div class="day"><span>1</span>D-day</div>
+        <p>3월 우수 아이디어 선정 설문조사</p>
+      </a></li>
+      <li><a href="javascript:void(0)">
+        <div class="day"><span>6</span>D-day</div>
+        <p>연비 관련 인식 조사</p>
+      </a></li>
+      <li><a href="javascript:void(0)">
+        <div class="day"><span>6</span>D-day</div>
+        <p>전기차, 하이브리드, 내연기관 선호 조사</p>
+      </a></li>
+      <li><a href="javascript:void(0)">
+        <div class="day"><span>12</span>D-day</div>
+        <p>(이벤트) 봄맞이 드리이브 시승 설문</p>
+      </a></li>
+    </ul>
+  </div>
+
+
+  <div class="hot-contents">
+    <a href="javascript:void(0)" class="hot-contents-more">
+      <img src="./images/m_more_icon.png" alt="" />
+    </a>
+    <p class="tit">HOT Contents</p>
+
+
+
+
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/hotcon1.jpg" alt="">
+          <div class="hotcon-swiper-txt">
+            <p>[]현대자동차, '아이오닉 디 유니크'런칭</p><p>2021.03.31</p>
+          </div>
+        </a></div>
+
+        <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/hotcon2.png" alt="">
+          <div class="hotcon-swiper-txt">
+            <p>[]현대자동차, '아이오닉 디 유니크'런칭</p><p>2021.03.31</p>
+          </div>
+        </a></div>
+
+        <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/hotcon3.jpg" alt="">
+          <div class="hotcon-swiper-txt">
+            <p>[]현대자동차, '아이오닉 디 유니크'런칭</p><p>2021.03.31</p>
+          </div>
+        </a></div>
+
+        <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/hotcon4.jpg" alt="">
+          <div class="hotcon-swiper-txt">
+            <p>[]현대자동차, '아이오닉 디 유니크'런칭</p><p>2021.03.31</p>
+          </div>
+        </a></div>
+
+        <div class="swiper-slide"><a href="javascript:void(0)">
+          <img src="./images/hotcon5.jpg" alt="">
+          <div class="hotcon-swiper-txt">
+            <p>[]현대자동차, '아이오닉 디 유니크'런칭</p><p>2021.03.31</p>
+          </div>
+        </a></div>
+      </div>
+
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-prev">
+        <img src="./images/mainCon2_banner_prev.png" alt="prev">
+      </div>
+      <div class="swiper-next">
+        <img src="./images/mainCon2_banner_next.png" alt="next">
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+ </div>
+</section>
+
+
+<!-- maincon3 -->
+
+<section class="maincon3">
+  <div class="inner">
+    <div class="notice">
+      <span>공지사항</span>
+      <p>"봄이니까 디지털키로 시승해봄" 이벤트 2-5차 시승 당첨자...</p>
+      <img src="./images/intro_notiArea_arrow.png" alt="화살표" />
+    </div>
+    <div class="faq">
+      <span>FAQ</span>
+      <p>H-ear에 자주 묻는 질문</p>
+      <img src="./images/intro_notiArea_arrow.png" alt="화살표" />
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="inner">
+    <img src="./images/footer_logo.png" alt="">
+    <div class="right">
+      <ul>
+        <li>개인정보처리방침</li>
+        <li>이용약관</li>
+        <li>FAQ</li>
+      </ul>
+      <div class="A">
+        Copyright ⓒ 2019 Hyundai Motor Company. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
