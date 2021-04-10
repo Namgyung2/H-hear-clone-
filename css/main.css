@@ -20,7 +20,7 @@ a {
   font-weight: bolder;
 }
 
-/* HEADER */
+/* MO - HEADER */
 header { 
   display: flex;
   justify-content: center;
@@ -50,12 +50,27 @@ header .inner .manu-btn img{
   height: 25px;
   width: 35px;
 }
+
+/* MO - VISUAL ----------------여기-------------*/
+.visual .swiper-container .swiper-slide {
+  align-items: center;
+}
+.visual .swiper-container .swiper-slide a img {
+  width: 100%;
+  margin: 0 auto;
+}
+.visual .swiper-container .swiper-prev,
+.visual .swiper-container .swiper-next { 
+ display: none;
+}
+
+
 /* PC용 CSS - 1024px*/
 @media all and (min-width:1024px){
 
   /* 공통 */
 
-  /* HEADER */
+  /* PC - HEADER */
   header .inner img{
     left: 10%;
   }
@@ -119,4 +134,110 @@ header .inner .manu-btn img{
     display: none;
   }
 
+/* PC - VISUAL ----------------여기 ------------- */
+
+
+.visual .swiper-container .swiper-prev,
+.visual .swiper-container .swiper-next { 
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visual .swiper-container .swiper-next { 
+  right: 0;
+}
+.visual .swiper-container .login {
+  position: absolute;
+  top: -700px;
+  /* transform: translateY(700%); */
+  left: 70%;
+  z-index: 999;
+  box-sizing: border-box;
+  width: 382px;
+  height: 454px;
+  background-color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+  padding: 40px 40px ;
+}
+
+.visual .swiper-container .login img{
+  position: absolute;
+  margin: 17px 0;
+}
+.visual .swiper-container .login .login-input {
+  height: 127px;
+}
+.visual .swiper-container .login .login-input .id ,
+.visual .swiper-container .login .login-input .fw {
+  height: 55px;
+  border-bottom:1px solid #ddd;
+}
+.visual .swiper-container .login .login-input .id input,
+.visual .swiper-container .login .login-input .fw input{
+  box-sizing: border-box;
+  margin-left: 30px;
+  border: none;
+  width: 270px;
+  height: 55px;
+}
+.visual .swiper-container .login .login-input .fw{
+  margin-top: 15px;
+}
+.visual .swiper-container .login .save-id {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.visual .swiper-container .login .save-id input{
+  margin-right: 10px;
+  width: 19px;
+  height: 19px
+}
+.visual .swiper-container .login .login-btn {
+  height: 127px;
+}
+.visual .swiper-container .login .login-btn .login-btn-login,
+.visual .swiper-container .login .login-btn .login-signup{
+  box-sizing: border-box;
+  padding: 22px 0;
+  height: 60px;
+  text-align: center;
+}
+.visual .swiper-container .login .login-btn .login-btn-login {
+  background-color: #143d6c;
+}
+.visual .swiper-container .login .login-btn .login-signup{
+  background-color: #555;
+  margin-top: 10px;
+}
+  .visual .swiper-container .login .login-btn .login-btn-login a,
+  .visual .swiper-container .login .login-btn .login-signup a {
+    color: #fff;
+}
+.visual .swiper-container .login .find {
+  text-align: center;
+  margin: 20px 0;
+}
+.visual .swiper-container .login .find a {
+  color: #333;
+}
+.visual .swiper-container .login .find a:first-child{
+  padding-right: 15px;
+}
+.visual .swiper-container .login .find a:first-child::before {
+  content: "";
+  background-color: #ddd;
+  width: 1px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
 }

@@ -91,7 +91,7 @@ header .inner .sub-manu li:last-child::after{
   position: relative;
 }
 .visual .swiper-container {
-  /* width: 1400px;   고정 */
+  
 }
 .visual .swiper-container .swiper-slide {
   align-items: center;
