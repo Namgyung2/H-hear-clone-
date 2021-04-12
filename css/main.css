@@ -1,7 +1,7 @@
 /* 모바일용 CSS - 320px */
 /* 공통 */
 .inner{
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -19,6 +19,7 @@ a {
   color: #000;
   font-weight: bolder;
 }
+
 
 /* MO - HEADER */
 header { 
@@ -51,25 +52,395 @@ header .inner .manu-btn img{
   width: 35px;
 }
 
-/* MO - VISUAL ----------------여기-------------*/
-.visual .swiper-container .swiper-slide {
-  align-items: center;
+/* MO - VISUAL */
+@media all and (max-width:1024px) {
+  .visual-pc {
+    display: none;
+  }
+
+  .visual-mo {
+    position: relative;
+  }
+  .visual-mo .swiper-container .swiper-slide {
+    align-items: center;
+    
+  }
+  .visual-mo .swiper-container .swiper-slide a img {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
-.visual .swiper-container .swiper-slide a img {
+
+
+
+
+
+
+
+/* MO - MAIN ----------------여기 -------------*/
+.main{ 
+  position: relative;
+  /* height: 846px; */
+  padding: 80px 0 94px 0;
+  display: block;
+}
+.main .more-btn{
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+.main .more-btn a{
+  font-size: 18px;
+  color: black;
+}
+ .tabmenu{ 
+  position:absolute; 
+}
+.tabmenu ul li{
+  display:  inline-block; 
+  text-align: center; 
+  line-height:40px;
+  margin-right: 35px
+}
+.tabmenu label{
+  display:block;
+  width:100%; 
+  height: 40px;
+  line-height:40px;
+  font-size: 21px;
+  ;
+}
+.tabmenu input{display:none;}
+.tabCon{
+  box-sizing: border-box;
+  display:none; 
+  text-align:left; 
+  position:absolute; 
+  left:0; 
+  padding: 37px 54px 58px 54px;
   width: 100%;
-  margin: 0 auto;
+  height: 70px; /*여기*/
 }
-.visual .swiper-container .swiper-prev,
-.visual .swiper-container .swiper-next { 
- display: none;
+.tabCon-1 .swiper-wrapper{
+  /* height: 700px; */
+  padding-bottom: 58px;
+  flex-direction: column;
 }
+
+/* --------------- */
+.tabCon-1 .swiper-slide {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, .15);
+  width: 346px !important;
+  /* height: 700px; */
+}
+.tabCon-1 .swiper-slide img {
+  width: 100%;
+}
+.tabCon-1 .txtarea {
+  box-sizing: border-box;
+  padding: 30px 36px 40px 36px;
+  height: 353px;
+  width: 100%;
+}
+.tabCon-1 .txtarea a {
+
+}
+.tabCon-1 .txtarea a .label {
+  height: 40px;
+  
+}
+.tabCon-1 .txtarea a .label p {
+  display: inline;
+  border: 1px solid rgb(197, 192, 192);
+  padding: 3px 10px;
+  color: rgb(117, 117, 117);
+}
+.tabCon-1 .txtarea a .tit {
+  margin-top: 12px;
+  height: 60px;
+}
+.tabCon-1 .txtarea a .txt {
+  margin-top: 12px;
+  color: #777;
+  line-height: 120%;
+  /* height: 67px; */
+}
+/* ===LiST=== */
+
+.tabCon-1 .txtarea .list{
+  margin-top: 22px;
+}
+
+.tabCon-1 .txtarea .list li {
+  display: flex;
+  height: 26px;
+
+}
+
+.tabCon-1 .txtarea .list li .list-right {
+  position: absolute;
+  right: 36px;
+}
+.tabCon-1 .txtarea .list li .list-right .num{
+  font-weight: bolder;
+}
+.main .tabmenu .swiper-scrollbar {
+  bottom: 0;
+}
+
+
+/* =================== */
+
+.tabmenu input:checked ~ label{
+  box-sizing: border-box;
+  border-bottom: 5px solid rgb(18, 180, 180);
+}
+.tabmenu input:checked ~ .tabCon{
+  display:block;
+}
+
+/* MO - MAINCON */
+
+.maincon2 {
+  padding: 79px 0 99px;
+  background-color: #f6f3f2;
+  
+}
+
+.maincon2 .inner .maincon2-inner{
+  justify-content: space-between;
+  position: a;
+}
+.maincon2 .inner .hot-subject,
+.maincon2 .inner .hot-survey,
+.maincon2 .inner .hot-contents {
+  display: inline-block;
+  height: 378px;
+  width: 346px;
+
+}
+.maincon2 .inner .hot-subject .tit,
+.maincon2 .inner .hot-survey .tit,
+.maincon2 .inner .hot-contents .tit {
+  margin-bottom: 30px;
+}
+
+.maincon2 .inner .hot-subject ul li {
+  padding: 21px 20px 20px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.maincon2 .inner .hot-subject ul li:first-child {
+ border-top: 1px solid #ddd;
+}
+.maincon2 .inner .hot-subject ul li p:first-child{
+  letter-spacing: -1px;
+  color: #333;
+}
+.maincon2 .inner .hot-subject ul li p:last-child{
+  margin-top: 7px;
+  color: #999;
+}
+.maincon2 .inner .hot-subject ul li:hover p {
+  text-decoration: underline ;
+}
+.maincon2 .inner .hot-survey ul li a{
+  height: 72px;
+  display: flex;
+  margin: 10px 0;
+}
+.maincon2 .inner .hot-survey ul li a .day{
+  box-sizing: border-box;
+  text-align: center;
+  height: 72px;
+  width: 72px;
+  background-color: white;
+  color: #333;
+  padding: 13px 0;
+}
+.maincon2 .inner .hot-survey ul li a .day span{
+  height: 25px;
+  display: block;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #000;
+}
+.maincon2 .inner .hot-survey ul li a p{
+  color: #333;
+  margin: auto 25px auto 28px;
+  letter-spacing: -2px;
+  line-height: 150%;
+  
+}
+.maincon2 .inner .hot-survey ul li a:hover p {
+  text-decoration: underline;
+
+}
+.maincon2 .inner .hot-contents {
+  position: relative;
+}
+.maincon2 .inner .hot-contents .hot-contents-more img{
+  position: absolute;
+  height: 18px;
+  right: 0;
+}
+.maincon2 .inner .hot-contents .swiper-container .swiper-wrapper{
+}
+.maincon2 .inner .hot-contents .swiper-container .swiper-wrapper img{
+  width: 346px;
+  height: 225px;
+}
+.maincon2 .inner .hot-contents .swiper-container .swiper-wrapper .hotcon-swiper-txt{
+  background-color: #222;
+  box-sizing: border-box;
+  width: 346px;
+  height: 92px;
+  padding: 25px 30px;
+}
+.maincon2 .inner .hot-contents .swiper-container .swiper-wrapper .hotcon-swiper-txt p:first-child{
+  color: white;
+  font-size: 17px;
+  letter-spacing: -1px;
+}
+.maincon2 .inner .hot-contents .swiper-container .swiper-wrapper .hotcon-swiper-txt p:last-child{
+  font-weight: bold;
+  color: #555;
+  margin-top: 7px;
+}
+.maincon2 .inner .hot-contents .swiper-container .swiper-wrapper a:hover .hotcon-swiper-txt p{
+  text-decoration: underline;
+}
+.maincon2 .inner .hot-contents .swiper-prev ,
+.maincon2 .inner .hot-contents .swiper-next {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  top: 95.5px;
+}
+.maincon2 .inner .hot-contents .swiper-next {
+  right: 0;
+}
+
+
+/* MO MAINCON3 */
+
+.maincon3 {
+  background-color: #555;
+  height: 72px;
+}
+.maincon3 .inner {
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+.maincon3 .inner .notice,
+.maincon3 .inner .faq {
+  position: relative;
+  display: flex;
+  flex-basis: 590px;
+  padding: 26px 0;
+}
+.maincon3 .inner .faq {
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+.maincon3 .inner .notice p,
+.maincon3 .inner .faq p {
+  font-size: 16px;
+  letter-spacing:-1px ;
+  color: #999;
+  font-weight: bolder;
+}
+.maincon3 .inner .notice span,
+.maincon3 .inner .faq span {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 30px;
+  height: 20px;
+  color: white;
+}
+.maincon3 .inner .notice img{
+  position: absolute;
+  height: 18px;
+  right: 30px;
+}
+.maincon3 .inner .faq img{
+  position: absolute;
+  height: 18px;
+  right: 0px;
+}
+.maincon3 .inner .notice::after {
+  position: absolute;
+  content: " ";
+  background: #777;
+  width: 1px;
+  height: 25px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* MO footer */
+
+footer {
+  background-color: #222;
+  padding: 60px 0 67px 0;
+}
+footer .inner {
+  display: flex;
+}
+footer img {
+  width: 78px;
+  height: 44px;
+  margin-right: 52px;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+
+}
+footer ul li:first-child {
+  color: #ddd;
+  font-weight: bolder;
+}
+footer .inner .right ul li:nth-child(2),
+footer .inner .right ul li:nth-child(3) {
+  color: #777;
+}
+footer .inner .right ul li::after {
+  display: inline-block;
+  content: "";
+  background-color: #777;
+  width: 3px;
+  height: 3px;
+  margin: 0 13px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+footer .inner .right ul li:nth-child(3):after {
+  display: none;
+}
+footer .A {
+  color: #777;
+  margin-top: 15px;
+}
+
+
+
+
+
 
 
 /* PC용 CSS - 1024px*/
 @media all and (min-width:1024px){
-
   /* 공통 */
-
+  .inner{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+  }
   /* PC - HEADER */
   header .inner img{
     left: 10%;
@@ -130,114 +501,220 @@ header .inner .manu-btn img{
   header .inner .sub-manu li:last-child::after{
     display: none;
   }
+
   header .inner .manu-btn{
     display: none;
   }
 
-/* PC - VISUAL ----------------여기 ------------- */
+
+/* PC - VISUAL */
+  .visual-mo {
+    display: none;
+  }
+  .visual-pc {
+    position: relative;
+  }
+  .visual-pc .swiper-container .swiper-slide {
+    align-items: center;
+    width: 346px;
+  }
+  .visual-pc .swiper-container .swiper-slide a img {
+    height: 750px;
+    margin: 0 auto;
+  }
+  .visual-pc .swiper-container .swiper-prev,
+  .visual-pc .swiper-container .swiper-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .visual-pc .swiper-container .swiper-next {
+    right: 0;
+  }
 
 
-.visual .swiper-container .swiper-prev,
-.visual .swiper-container .swiper-next { 
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.visual .swiper-container .swiper-next { 
-  right: 0;
-}
-.visual .swiper-container .login {
-  position: absolute;
-  top: -700px;
-  /* transform: translateY(700%); */
-  left: 70%;
-  z-index: 999;
-  box-sizing: border-box;
-  width: 382px;
-  height: 454px;
-  background-color: white;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
-  padding: 40px 40px ;
-}
+  .visual-pc .swiper-container .login {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70%;
+    z-index: 999;
+    box-sizing: border-box;
+    width: 382px;
+    height: 454px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+    padding: 40px 40px;
+  }
 
-.visual .swiper-container .login img{
-  position: absolute;
-  margin: 17px 0;
-}
-.visual .swiper-container .login .login-input {
-  height: 127px;
-}
-.visual .swiper-container .login .login-input .id ,
-.visual .swiper-container .login .login-input .fw {
-  height: 55px;
-  border-bottom:1px solid #ddd;
-}
-.visual .swiper-container .login .login-input .id input,
-.visual .swiper-container .login .login-input .fw input{
-  box-sizing: border-box;
-  margin-left: 30px;
-  border: none;
-  width: 270px;
-  height: 55px;
-}
-.visual .swiper-container .login .login-input .fw{
-  margin-top: 15px;
-}
-.visual .swiper-container .login .save-id {
-  font-size: 20px;
-  margin: 20px 0;
-}
-.visual .swiper-container .login .save-id input{
-  margin-right: 10px;
-  width: 19px;
-  height: 19px
-}
-.visual .swiper-container .login .login-btn {
-  height: 127px;
-}
-.visual .swiper-container .login .login-btn .login-btn-login,
-.visual .swiper-container .login .login-btn .login-signup{
-  box-sizing: border-box;
-  padding: 22px 0;
-  height: 60px;
-  text-align: center;
-}
-.visual .swiper-container .login .login-btn .login-btn-login {
-  background-color: #143d6c;
-}
-.visual .swiper-container .login .login-btn .login-signup{
-  background-color: #555;
-  margin-top: 10px;
-}
-  .visual .swiper-container .login .login-btn .login-btn-login a,
-  .visual .swiper-container .login .login-btn .login-signup a {
+  .visual-pc .swiper-container .login img {
+    position: absolute;
+    margin: 17px 0;
+  }
+
+  .visual-pc .swiper-container .login .login-input {
+    height: 127px;
+
+
+  }
+
+  .visual-pc .swiper-container .login .login-input .id,
+  .visual-pc .swiper-container .login .login-input .fw {
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .visual-pc .swiper-container .login .login-input .id input,
+  .visual-pc .swiper-container .login .login-input .fw input {
+    box-sizing: border-box;
+    margin-left: 30px;
+    border: none;
+    width: 270px;
+    height: 55px;
+  }
+
+
+  .visual-pc .swiper-container .login .login-input .fw {
+    margin-top: 15px;
+  }
+
+  .visual-pc .swiper-container .login .save-id {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .visual-pc .swiper-container .login .save-id input {
+    margin-right: 10px;
+    width: 19px;
+    height: 19px
+  }
+
+  .visual-pc .swiper-container .login .login-btn {
+    height: 127px;
+
+  }
+
+  .visual-pc .swiper-container .login .login-btn .login-btn-login,
+  .visual-pc .swiper-container .login .login-btn .login-signup {
+    box-sizing: border-box;
+    padding: 22px 0;
+    height: 60px;
+    text-align: center;
+
+  }
+
+  .visual-pc .swiper-container .login .login-btn .login-btn-login {
+    background-color: #143d6c;
+  }
+
+  .visual-pc .swiper-container .login .login-btn .login-signup {
+    background-color: #555;
+    margin-top: 10px;
+  }
+
+  .visual-pc .swiper-container .login .login-btn .login-btn-login a,
+  .visual-pc .swiper-container .login .login-btn .login-signup a {
     color: #fff;
-}
-.visual .swiper-container .login .find {
-  text-align: center;
-  margin: 20px 0;
-}
-.visual .swiper-container .login .find a {
-  color: #333;
-}
-.visual .swiper-container .login .find a:first-child{
-  padding-right: 15px;
-}
-.visual .swiper-container .login .find a:first-child::before {
-  content: "";
-  background-color: #ddd;
-  width: 1px;
-  height: 12px;
-  display: inline-block;
-  position: relative;
-  left: 10px;
-}
+  }
+
+
+  .visual-pc .swiper-container .login .find {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .visual-pc .swiper-container .login .find a {
+    color: #333;
+  }
+
+  .visual-pc .swiper-container .login .find a:first-child {
+    padding-right: 15px;
+  }
+
+  .visual-pc .swiper-container .login .find a:first-child::before {
+    content: "";
+    background-color: #ddd;
+    width: 1px;
+    height: 12px;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+  }
+
+  /* PC - MAIN ----------------여기 -------------*/
+
+  .main{ 
+    height: 846px;
+  }
+  .tabCon-1 .swiper-wrapper{
+    height: 700px;
+    padding-bottom: 58px;
+  }
+  
+  /* --------------- */
+  .tabCon-1 .swiper-slide {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .15);
+    width: 346px !important;
+    height: 700px;
+  }
+  .tabCon-1 .swiper-slide img {
+    width: 100%;
+  }
+  .tabCon-1 .txtarea {
+    box-sizing: border-box;
+    padding: 30px 36px 40px 36px;
+    height: 353px;
+    width: 100%;
+  }
+  .tabCon-1 .txtarea a .label {
+    height: 40px;
+  }
+  .tabCon-1 .txtarea a .label p {
+    display: inline;
+    border: 1px solid rgb(197, 192, 192);
+    padding: 3px 10px;
+    color: rgb(117, 117, 117);
+  }
+  .tabCon-1 .txtarea a .tit {
+    margin-top: 12px;
+    height: 60px;
+  }
+  .tabCon-1 .txtarea a .txt {
+    margin-top: 12px;
+    color: #777;
+    line-height: 120%;
+    /* height: 67px; */
+  }
+  /* ===LiST=== */
+  
+  .tabCon-1 .txtarea .list{
+    margin-top: 22px;
+  }
+  
+  .tabCon-1 .txtarea .list li {
+    display: flex;
+    height: 26px;
+  
+  }
+  
+  .tabCon-1 .txtarea .list li .list-right {
+    position: absolute;
+    right: 36px;
+  }
+  .tabCon-1 .txtarea .list li .list-right .num{
+    font-weight: bolder;
+  }
+  .main .tabmenu .swiper-scrollbar {
+    bottom: 0;
+    width: 1024px;
+  }
 }

@@ -1,15 +1,30 @@
 // Swiper
 
-new Swiper('.visual .swiper-container', {
+new Swiper('.visual-mo .swiper-container', {
   // Optional parameters
   loop: true,
   autoplay: {
-    deplay: 3000
+    deplay: 3000,
   },
-  
+
   // If we need pagination
   pagination: {
-    el: '.visual .swiper-pagination',
+    el: '.visual-mo .swiper-pagination',
+    clickable: true
+  },
+
+});
+
+new Swiper('.visual-pc .swiper-container', {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+    deplay: 3000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.visual-pc .swiper-pagination',
     clickable: true
   },
 
@@ -21,15 +36,17 @@ new Swiper('.visual .swiper-container', {
 });
 
 
-new Swiper('.main #tab1 .swiper-container', {
+    new Swiper('.main #tab1 .swiper-container', {
   slidesPerView: 'auto',
-  slidesPerView: 3,
+  slidesPerView: 5,
   spaceBetween : 50,
   freeMode: true,
   scrollbar: {
     el: '.swiper-scrollbar',
   },
 });
+
+
 
 
 new Swiper('.maincon2 .swiper-container', {
