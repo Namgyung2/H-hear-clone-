@@ -35,18 +35,13 @@ new Swiper('.visual-pc .swiper-container', {
   },
 });
 
-
-    new Swiper('.main #tab1 .swiper-container', {
-  slidesPerView: 'auto',
-  slidesPerView: 5,
-  spaceBetween : 50,
-  freeMode: true,
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+ // 화면 크기
+function funcThisSize() {
+  $("#innerWidth").html( window.innerWidth );
+}
 
 
+ 
 
 
 new Swiper('.maincon2 .swiper-container', {
@@ -60,3 +55,23 @@ new Swiper('.maincon2 .swiper-container', {
     deplay: 3000
   },
 });
+
+$( document ).ready( function() {
+  
+  $( window ).resize( function() {
+    if (window.innerWidth >= 1024) {
+
+      new Swiper('.main #tab1 .swiper-container', {
+    slidesPerView: 'auto',
+    slidesPerView: 5,
+    spaceBetween : 50,
+    freeMode: true,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+  
+    },
+  });
+  
+  }
+  } );
+} );
